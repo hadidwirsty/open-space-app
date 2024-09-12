@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "e2e": "cypress run",
+    "ci:test": "vitest --no-watch && start-server-and-test dev http-get://0.0.0.0:5173 e2e",
     "lint": "eslint ./src --ext .jsx --ext .js",
     "format": "prettier --write ."
   },
@@ -40,6 +41,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "jsdom": "^25.0.0",
+    "start-server-and-test": "^2.0.7",
     "vite": "^4.2.0",
     "vitest": "^2.0.5"
   }
